@@ -32,11 +32,16 @@ name: sendMail04ofMeaven
 #         GITHUB_TOKEN: ${{ github.token }}
 
 
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+   push:
+   gollum:
+   schedule:
+       - cron: '30 22 * * *'
 
 jobs:
   build:
