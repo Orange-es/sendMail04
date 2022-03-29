@@ -58,5 +58,5 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
     - name: excute the task
       run:
-        mvn compile exec:java -Dexec.mainClass="org.example.App"
+        mvn compile exec:java -Dexec.mainClass="success"
 
