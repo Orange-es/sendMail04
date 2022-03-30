@@ -32,16 +32,19 @@ name: sendMail04ofMeaven
 #         GITHUB_TOKEN: ${{ github.token }}
 
 
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 on:
-   push:
-   gollum:
-   schedule:
-       - cron: '30 22 * * *'
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+#     上面的修改程序时启动
+#     下面是定时启动程序
+# on:
+#    push:
+#    gollum:
+#    schedule:
+#        - cron: '30 22 * * *'
 
 jobs:
   build:
